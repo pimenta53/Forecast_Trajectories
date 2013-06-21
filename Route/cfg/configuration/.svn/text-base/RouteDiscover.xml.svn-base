@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform description="This is a sample configuration" name="RouteDiscover">
+    <hosts>
+        <host name="localhost">
+            <containers>
+                <container name="Walkers">
+                    <agents>
+                        <agent name="SuperVisor" type="SP"/>                                
+                    	<agent name="SensorComunication" type="CentralSensor"/>
+                    	
+                    </agents>
+            	</container>
+            	 <container name="Administration-Node">
+                    <agents>
+                        <agent name="wsma" type="Workflow Status Manager Agent">
+					       <parameters>
+					          <parameter key="storageClassName">
+					            <value>com.tilab.wade.wsma.MemoryStorage</value>
+					          </parameter>
+					        </parameters>
+                        </agent>
+                        <agent name="esa" type="Event System Agent"/>                
+                    </agents>
+                </container>
+            </containers>
+        </host>            
+    </hosts>
+</platform>

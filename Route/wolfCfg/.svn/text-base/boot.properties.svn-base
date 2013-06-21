@@ -1,0 +1,13 @@
+#############################################################################
+#
+# WADE Boot Daemon property file.
+#
+#############################################################################
+
+# The port of bootdaemon
+# OPTIONAL. Default = 7777
+#bootdaemon-port=
+
+# The name of bootdaemon
+# OPTIONAL. Default = TSDaemon
+#bootdaemon-name=

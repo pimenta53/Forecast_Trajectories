@@ -1,0 +1,36 @@
+#############################################################################
+#
+# WADE Main Container property file.
+#
+#############################################################################
+
+# The port of the JADE main container
+# OPTIONAL. Defaults to 1099
+#local-port=1099
+
+# The list of specifiers, according to the JADE format, defining the agents
+# that must be launched on the main container at startup time.
+# OPTIONAL.
+agents=cfa:com.tilab.wade.cfa.ConfigurationAgent;raa:com.tilab.wade.raa.RuntimeAllocatorAgent;gui:com.tilab.wade.tools.management.ManagementAgent
+#agents=perf:com.tilab.wade.performer.WorkflowEngineAgent;launcher:com.tilab.wade.tools.launcher.LauncherAgent
+
+# Additional JADE arguments (see the JADE Administrator's Guide)
+services=jade.core.messaging.TopicManagementService;jade.core.mobility.AgentMobilityService;jade.core.event.NotificationService;jade.core.replication.MainReplicationService
+
+platform-id=WADE
+gui=true
+nomtp=true
+jade_core_MainContainerImpl_replicatedagents=com.tilab.wade.cfa.ConfigurationAgent;jade.tools.rma.rma;com.tilab.wade.raa.RuntimeAllocatorAgent;gui:com.tilab.wade.tools.management.ManagementAgent
+
+# DF configuration
+#jade_domain_df_maxresult=5000
+jade_domain_df_autocleanup=true
+
+# Parameters needed to keep the DF catalogue on a DB. This is necessary to have fully functional fault recovery.
+# Specify DB url, driver, username and password according to the DB you want to use.
+#jade_domain_df_db-abortonerror=true
+#jade_domain_df_db-cleantables=true
+#jade_domain_df_db-url=jdbc:url
+#jade_domain_df_db-driver=some.Driver
+#jade_domain_df_db-username=user
+#jade_domain_df_db-password=password

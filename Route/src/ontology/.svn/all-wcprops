@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/agentesinteligentes/!svn/ver/156/Route/src/ontology
+END
+Way.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/agentesinteligentes/!svn/ver/94/Route/src/ontology/Way.java
+END
+SupposedWay.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/agentesinteligentes/!svn/ver/93/Route/src/ontology/SupposedWay.java
+END
+Sensor.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/agentesinteligentes/!svn/ver/93/Route/src/ontology/Sensor.java
+END
+Position.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/agentesinteligentes/!svn/ver/93/Route/src/ontology/Position.java
+END
+SensorSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/agentesinteligentes/!svn/ver/109/Route/src/ontology/SensorSet.java
+END
+TrajectoryOntology.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/agentesinteligentes/!svn/ver/93/Route/src/ontology/TrajectoryOntology.java
+END
+Point2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/agentesinteligentes/!svn/ver/150/Route/src/ontology/Point2D.java
+END
+Spot.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/agentesinteligentes/!svn/ver/109/Route/src/ontology/Spot.java
+END
+RealWay.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/agentesinteligentes/!svn/ver/93/Route/src/ontology/RealWay.java
+END

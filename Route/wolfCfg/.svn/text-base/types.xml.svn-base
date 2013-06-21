@@ -1,0 +1,33 @@
+<platform>
+	<properties>
+		<!-- Indicates whether or not java primitive types must be preserved in SLCodec -->
+		<Property name="SL-preserve-java-types" value="true"/>
+	</properties>
+	
+	<agentRoles>
+		<agentRole description="Administrator">
+		</agentRole>
+		<agentRole description= "Workflow Executor">
+		</agentRole>
+	</agentRoles>
+	
+	<agentTypes>
+		<agentType description = "Workflow Engine Agent" className="com.tilab.wade.performer.WorkflowEngineAgent" role="Workflow Executor"/>
+		<agentType description = "Control Agent" className="com.tilab.wade.ca.ControllerAgent" role="Administrator">
+			<properties>
+				<property name = "autorestart" value="true"/>
+				<property name = "threadNumberThreshold" value="500"/>
+				<property name = "class-loader-root" value="${project-home}/deploy"/>
+			</properties>
+		</agentType>
+		<agentType description = "Configuration Agent" className="com.tilab.wade.cfa.ConfigurationAgent" role="Administrator">
+                        <properties>
+                                <property name = "configurationsPath" value="${project-home}/cfg/configuration"/>
+                        </properties>
+		</agentType>
+		<agentType description = "Runtime Allocator Agent" className="com.tilab.wade.raa.RuntimeAllocatorAgent" role="Administrator"/>
+		<agentType description = "Backup Controller Agent" className="com.tilab.wade.bca.BackupControllerAgent" role="Administrator"/>
+		<agentType description = "Workflow Status Manager Agent" className="com.tilab.wade.wsma.WorkflowStatusManagerAgent" role="Administrator"/>
+		<agentType description = "Event System Agent" className="com.tilab.wade.esa.EventSystemAgent" role="Administrator"/>
+	</agentTypes>
+</platform>

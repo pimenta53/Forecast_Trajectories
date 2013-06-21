@@ -1,0 +1,8 @@
+<allocationRules>
+	<allocationRule>
+		<!-- Match all agents -->
+		<condition>name==*</condition>
+		<!-- Allocate across all available containers -->
+		<policy name="com.tilab.wade.raa.policies.RoundRobinPolicy"/>
+	</allocationRule>
+</allocationRules>

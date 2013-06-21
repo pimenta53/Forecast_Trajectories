@@ -1,0 +1,24 @@
+# Common message codes
+ACTION_NOT_SUPPORTED = Action {0} not supported by Agents of type {1}.
+REQUEST_NOT_UNDERSTOOD = Request not understood: {0}.
+UNEXPECTED_ERROR = Unexpected error: {0}.
+TIMEOUT_EXPIRED = Timeout expired for action {0} in agent {1}.
+
+# CFA message codes
+LOAD_CONFIGURATION_ERROR = Error loading platform configuration: {0}.
+SAVE_CONFIGURATION_ERROR = Error saving platform configuration: {0}.
+IMPORT_CONFIGURATION_ERROR = Error importing platform configuration {0}: {1}.
+EXPORT_CONFIGURATION_ERROR = Error exporting platform configuration {0}: {1}.
+REMOVE_CONFIGURATION_ERROR = Error removing platform configuration {0}: {1}.
+GET_HOSTS_ERROR = Error retrieving platform hosts: {0}.
+GET_AGENT_POOLS_ERROR = Error retrieving platform agent pools: {0}.
+COMPARE_CONFIGURATION_ERROR = Error comparing running with target configuration: {0}. 
+GET_CONFIGURATIONS_ERROR = Error retrieving configurations: {0}.
+CONTAINER_STARTUP_ERROR = Container startup error: {0}.
+CA_STARTUP_ERROR = Control agent did not start properly: {0}.
+AGENT_STARTUP_ERROR = Agent startup error: {0}.
+HOST_NOT_REACHABLE  = Host not reachable.
+HOST_NOT_FOUND = Host not found.
+INVALID_HOST_NAME = Invalid host name: {0}.
+BOOTDAEMON_NOT_AVAILABLE = Boot-daemon not available.
+PLATFORM_STATUS_ERROR = Unable to serve request {0} due to current platform status: {1}.

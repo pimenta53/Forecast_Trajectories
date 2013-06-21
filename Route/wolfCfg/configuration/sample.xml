@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform description="This is a sample configuration" name="Sample">
+    <hosts>
+        <host name="localhost">
+            <containers>
+                <container name="Execution-Node">
+                    <agents>
+                        <agent name="performer1" type="Workflow Engine Agent"/>                
+                        <agent name="performer2" type="Workflow Engine Agent"/>                
+                    </agents>
+                </container>
+                <container name="Administration-Node">
+                    <agents>
+                        <agent name="wsma" type="Workflow Status Manager Agent">
+					       <parameters>
+					          <parameter key="storageClassName">
+					            <value>com.tilab.wade.wsma.MemoryStorage</value>
+					          </parameter>
+					        </parameters>
+                        </agent>
+                        <agent name="esa" type="Event System Agent"/>                
+                    </agents>
+                </container>
+            </containers>
+        </host>            
+    </hosts>
+</platform>
